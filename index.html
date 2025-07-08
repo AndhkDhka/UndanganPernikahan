@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Clarissa & Kevin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('4.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #4b4b4b;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .bg-bottom-left,
+    .bg-bottom-right,
+    .bg-center-couple {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .bg-bottom-left {
+      bottom: 0;
+      left: -60px;
+      width: 700px;
+      z-index: 10;
+    }
+
+    .bg-bottom-right {
+      bottom: 0;
+      right: -60px;
+      width: 700px;
+      z-index: 10;
+    }
+
+    .bg-center-couple {
+      top: 160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 550px;
+      z-index: 10;
+    }
+
+    .header,
+    .section,
+    .footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header {
+      background: url('5.png') no-repeat top center;
+      background-size: cover;
+      text-align: center;
+      padding: 140px 20px 80px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-family: 'Great Vibes', cursive;
+      color: #5a3e36;
+    }
+
+    .header p {
+      font-size: 1.3em;
+      color: #7b6651;
+      margin-top: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #5a5a5a;
+    }
+
+    .section p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .info {
+      background: #fff;
+      border: 1px solid #e0d8cf;
+      border-radius: 16px;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 4px solid #f3e8e0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    audio {
+      display: block;
+      margin: 30px auto;
+    }
+
+    .footer {
+      background: url('6.png') no-repeat bottom center;
+      background-size: cover;
+      background-position: 5;
+      text-align: center;
+      padding: 100px 50px;
+      font-size: 0.8em;
+      color: #7d6b5b;
+    }
+
+    .bulan {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    .tanggal-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .tanggal-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .garis-atas,
+    .garis-bawah {
+      width: 60px;
+      height: 2px;
+      background-color: #bfae9d;
+    }
+
+    .garis-atas {
+      margin-bottom: 6px;
+    }
+
+    .garis-bawah {
+      margin-top: 6px;
+    }
+
+    .tanggal-teks {
+      font-size: 1em;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    .tanggal-tengah {
+      font-size: 3em;
+      font-weight: bold;
+      color: #2f2f2f;
+      margin-top: -5px;
+    }
+
+    .tahun {
+      margin-top: 25px;
+      font-weight: 600;
+    }
+
+    .alamat {
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .section h2 {
+    font-size: 1.6em;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tanggal-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tanggal-tengah {
+    font-size: 2.2em;
+  }
+
+  .bg-bottom-left,
+  .bg-bottom-right {
+    width: 300px;
+  }
+
+  .bg-center-couple {
+    width: 300px;
+    top: 245px;
+  }
+
+  .info {
+    margin: 10px 15px;
+    padding: 20px;
+  }
+
+  .section p,
+  .alamat {
+    font-size: 1em;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Dekorasi -->
+  <img src="1_clean (1).png" class="bg-bottom-left" alt="Dekorasi Kiri Atas">
+  <img src="2_clean.png" class="bg-bottom-right" alt="Dekorasi Kanan Bawah">
+  <img src="3_clean.png" class="bg-center-couple" alt="Ilustrasi Mempelai">
+  <img src="3_clean.png" class="bg-center-couple" alt="Ilustrasi Mempelai">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Haim & Rafif</h1>
+    <p>Undangan Pernikahan</p>
+  </div>
+
+  <!-- Waktu & Tempat -->
+  <div class="section">
+  <h2>Waktu & Tempat</h2>
+  <div class="decor-line"></div>
+
+  <div class="info">
+    <p class="bulan">SEPTEMBER</p>
+
+    <div class="tanggal-wrapper">
+      <div class="tanggal-col">
+        <div class="garis-atas"></div>
+        <div class="tanggal-teks">MINGGU</div>
+        <div class="garis-bawah"></div>
+      </div>
+
+      <div class="tanggal-tengah">27</div>
+
+      <div class="tanggal-col">
+        <div class="garis-atas"></div>
+        <div class="tanggal-teks">09.00 WIB</div>
+        <div class="garis-bawah"></div>
+      </div>
+    </div>
+
+    <p class="tahun">2027</p>
+    <p class="alamat">123 Any Where St., Any City</p>
+  </div>
+</div>
+
+
+
+  <!-- Galeri -->
+  <div class="section">
+    <h2>Galeri Foto Kami</h2>
+    <div class="gallery">
+      <img src="CJMR1714.JPEG" alt="Foto 1">
+      <img src="IMG_3551.jpg" alt="Foto 2">
+      <img src="IMG_6715.JPG" alt="Foto 3">
+      <img src="IMG_9231.jpg" alt="Foto 3">
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <div class="section">
+    <h2>Musik Latar</h2>
+    <p>Putar lagu untuk suasana lebih hangat 🎵</p>
+    <audio controls autoplay loop>
+      <source src="muhammad-al-muqit-wedding-nasheed.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung audio.
+    </audio>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2027 Clarissa & Kevin Wedding | Dibuat dengan cinta ❤️
+  </div>
+</body>
+</html>
